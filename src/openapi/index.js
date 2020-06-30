@@ -10,7 +10,7 @@ module.exports = {
         version: pkg.version
     },
     servers: [
-        {url: 'http://localhost:3001'}
+        {url: 'http://localhost:5000'}
     ],
     security: [
         {bearerAuth: []}

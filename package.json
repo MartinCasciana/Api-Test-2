@@ -1,6 +1,6 @@
 {
-  "name": "test-api",
-  "version": "0.0.1-SNAPSHOT",
+  "name": "api-test-2",
+  "version": "0.0.1",
   "description": "Api Test",
   "main": "index.js",
   "nodemonConfig": {
@@ -29,7 +29,7 @@
     "db:seed": "npx knex seed:run"
   },
   "directories": {
-    "test": "./test"
+    "test": "test"
   },
   "nyc": {
     "all": true,
