@@ -1,8 +1,12 @@
-const {
-    EmployeesController, StatesController
-} = include('controllers');
+const { EmployeesController } = include('controllers');
 
 module.exports = router => {
-    router.get('/', EmployeesController.fetch, StatesController.fetch);
+    router.route('/')
+        .get(EmployeesController.fetch)
+        .post(EmployeesController.create);
+    router.route('/:id')
+        .put(EmployeesController.save)
+        .delete(EmployeesController.delete)
+        .get(EmployeesController.fetchOne);
     return router;
 };
