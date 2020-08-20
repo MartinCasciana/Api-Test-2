@@ -68,7 +68,7 @@ module.exports = {
         }
     },
 
-    '/api/countries/{id}': {
+    '/api/country/{id}': {
         put: {
             security: [],
             summary: 'user id',
